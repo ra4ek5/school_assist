@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Личный кабинет</h1>
+        <button id="logoutBtn">Выйти</button>
+
+        <!-- учитель-->
+        <div id="teacherPanel" style="display: none;">
+            <h2>Панель учителя</h2>
+            <button id="createAssignmentBtn">Создать задание</button>
+            <div id="assignmentsList"></div>
+        </div>
+
+        <!-- ученик -->
+        <div id="studentPanel" style="display: none;">
+            <h2>Мои задания</h2>
+            <div id="tasksList"></div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
